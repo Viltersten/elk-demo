@@ -1,8 +1,8 @@
 import * as React from "react";
 import NavBar from "./NavBar";
 import DataView from "./DataView";
-// import Author from "../assets/author.png";
-var Author = require("../assets/author.png");
+import Author from "../assets/author.png";
+// var Author = require("../assets/author.png");
 
 const divStyle = {
   background: "pink",

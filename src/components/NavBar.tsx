@@ -7,13 +7,29 @@ const divStyle = {
 };
 
 export default class NavBar extends React.Component {
+
+  constructor(props: any) {
+    super(props);
+
+  }
+
+  private unoClicked(_: React.MouseEvent<HTMLElement>) {
+    console.log("uno clicked");
+    console.log(_);
+  }
+
+  private duoClicked = (_: React.MouseEvent) => {
+    console.log("duo clicked");
+    console.log(_);
+  }
+
   render() {
     return (
       <div style={divStyle}>
         <ul>
           <li onClick={() => { alert("click"); }}>Home</li>
-          <li>Item Uno</li>
-          <li>Item Duo</li>
+          <li onClick={this.unoClicked}>Item Uno</li>
+          <li onClick={this.duoClicked}>Item Duo</li>
           <li>Item Tri</li>
         </ul>
       </div>
